@@ -1,3 +1,4 @@
+using AuthorService.Services;
 using LightNovelService.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,10 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Repos
 builder.Services.AddScoped<IAuthorRepo, AuthorRepo>();
 
+// Grpc Services
+builder.Services.AddGrpc();
+builder.Services.AddGrpcReflection();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -24,6 +29,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    app.MapGrpcReflectionService();
 }
 
 app.UseHttpsRedirection();
@@ -31,6 +38,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGrpcService<GrpcAuthorServer>();
 
 // Seed Database
 SeedData.PrepareDatabase(app);
