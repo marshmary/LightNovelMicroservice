@@ -1,0 +1,44 @@
+{
+    "lightNovels": [
+        {
+            "id": 1,
+            "jpName": "終末なにしてますか？忙しいですか？救ってもらっていいですか？",
+            "romajiName": "Shuumatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?",
+            "volumes": 5,
+            "extras": 1,
+            "authorId": 1
+        },
+        {
+            "id": 2,
+            "jpName": "魔女の旅々",
+            "romajiName": "Majo no Tabitabi",
+            "volumes": 18,
+            "extras": 0,
+            "authorId": 2
+        },
+        {
+            "id": 3,
+            "jpName": "リリエールと祈りの国",
+            "romajiName": "Riviere to Inori no Kuni",
+            "volumes": 1,
+            "extras": 0,
+            "authorId": 2
+        },
+        {
+            "id": 4,
+            "jpName": "86-エイティシックス-",
+            "romajiName": "86",
+            "volumes": 11,
+            "extras": 0,
+            "authorId": 3
+        },
+        {
+            "id": 5,
+            "jpName": "キノの旅",
+            "romajiName": "Kino no Tabi",
+            "volumes": 21,
+            "extras": 0,
+            "authorId": 4
+        }
+    ]
+}

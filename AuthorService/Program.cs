@@ -33,7 +33,8 @@ if (app.Environment.IsDevelopment())
     app.MapGrpcReflectionService();
 }
 
-app.UseHttpsRedirection();
+// Redirect http sang https nen loi
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
