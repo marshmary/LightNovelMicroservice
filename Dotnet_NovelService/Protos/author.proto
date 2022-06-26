@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option csharp_namespace = "AuthorService";
+
 service GrpcAuthors {
     rpc GetAuthor(GetAuthorRequest) returns (AuthorGrpc) {}
 }
@@ -10,7 +12,7 @@ message GetAuthorRequest {
 
 message AuthorGrpc {
     int32 id = 1;
-    string jpName = 2;
-    string romajiName = 3;
+    string jp_name = 2;
+    string romaji_name = 3;
     string twitter = 4;
 }

@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-option csharp_namespace = "AuthorService";
-
 service GrpcAuthors {
     rpc GetAuthor(GetAuthorRequest) returns (AuthorGrpc) {}
 }
