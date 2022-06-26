@@ -77,6 +77,11 @@ async function assignAuthor(lightNovel) {
             resolve(res);
         })
     ).then((author) => {
-        lightNovel.author = author;
+        lightNovel.author = {
+            id: author.id,
+            jpName: author.jp_name,
+            romajiName: author.romaji_name,
+            twitter: author.twitter,
+        };
     });
 }
