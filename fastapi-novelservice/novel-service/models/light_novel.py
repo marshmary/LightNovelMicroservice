@@ -1,9 +1,9 @@
 from typing import Optional
-from pydantic import BaseModel
 from .author import AuthorResponse
+from .camel_model import CamelModel
 
 
-class LightNovel(BaseModel):
+class LightNovel(CamelModel):
     id: int = 0
     jp_name: str
     romaji_name: str
@@ -13,7 +13,7 @@ class LightNovel(BaseModel):
     author: Optional[AuthorResponse]
 
 
-class LightNovelRequest(BaseModel):
+class LightNovelRequest(CamelModel):
     jp_name: str
     romaji_name: str
     volumes: int
@@ -21,7 +21,7 @@ class LightNovelRequest(BaseModel):
     author_id: int
 
 
-class LightNovelResponse(BaseModel):
+class LightNovelResponse(CamelModel):
     """For serializing the response of the API."""
 
     id: int

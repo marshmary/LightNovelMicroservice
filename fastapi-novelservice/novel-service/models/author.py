@@ -1,8 +1,7 @@
-from lib2to3.pytree import Base
-from pydantic import BaseModel
+from .camel_model import CamelModel
 
 
-class AuthorResponse(BaseModel):
+class AuthorResponse(CamelModel):
     """For serializing the response of the API."""
 
     id: int
