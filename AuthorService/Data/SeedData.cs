@@ -17,6 +17,18 @@ namespace LightNovelService.Data
                 RomajiName = "Shiraishi Jougi",
                 Twitter = "https://twitter.com/jojojojougi"
             },
+            new Author {
+                Id = 3,
+                JpName = "安里アサト",
+                RomajiName = "Asato Asato",
+                Twitter = "https://twitter.com/asakura_toru"
+            },
+            new Author {
+                Id = 4,
+                JpName = "時雨沢恵一",
+                RomajiName = "Sigusawa Keiichi",
+                Twitter = "https://twitter.com/sigsawa"
+            },
         };
 
         public static void PrepareDatabase(IApplicationBuilder applicationBuilder)
