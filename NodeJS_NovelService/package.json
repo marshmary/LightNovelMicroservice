@@ -1,0 +1,19 @@
+{
+    "name": "novelservice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server": "^3.9.0",
+        "cors": "^2.8.5",
+        "graphql": "^16.5.0",
+        "grpc": "^1.24.11"
+    }
+}
