@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="protos/author.proto" GrpcService="Server" />
+    <Protobuf Include="Protos/author.proto" GrpcService="Server" />
   </ItemGroup>
 
 </Project>

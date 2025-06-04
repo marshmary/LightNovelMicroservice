@@ -29,9 +29,9 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-
-    app.MapGrpcReflectionService();
 }
+
+app.MapGrpcReflectionService();
 
 // Redirect http sang https nen loi
 // app.UseHttpsRedirection();
